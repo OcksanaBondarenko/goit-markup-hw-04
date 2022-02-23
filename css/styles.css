@@ -117,7 +117,7 @@ address {
 
 .clients-list {
   display: flex;
-  
+
 }
 
 .clients-list-link {
@@ -136,6 +136,20 @@ address {
   fill: var(--accent-color);
 }
 
+.features-list-picture {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-picture-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: #F5F4FA;
+  fill: #212121;
+}
 
 /* header */
 
@@ -282,6 +296,10 @@ address {
   justify-content: space-between;
 }
 
+.features-icon-img {
+  margin-bottom: 30px;
+}
+
 /* team */
 
 .team {
@@ -378,6 +396,11 @@ address {
   padding-bottom: 60px;
 }
 
+.footer-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .footer-list {
   margin-top: 20px;
 }
@@ -418,6 +441,17 @@ address {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+
+.footer-tagline {
+  color: var(--primary-text-color-theme-dark)
+}
+
+.footer-social-list {
+  box-sizing: border-box;
+  width: 206px;
+  height: 80px;
+}
+
 
 /* portfolio */
 
