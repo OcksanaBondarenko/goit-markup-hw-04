@@ -183,6 +183,41 @@ address {
   margin-right: 50px;
 }
 
+.contacts {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.contacts-item:first-child{
+    margin-right: 30px;
+}
+
+.contact-mail, .contact-number {
+    text-decoration: none;
+    color: var(--second-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: flex;
+    fill: var(--second-text-color);
+}
+
+.contacts-icon-email {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+
+.contacts-icon-tel {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+
 .nav-list-link:hover,
 .nav-list-link:focus {
   color: var(--accent-color);
@@ -211,6 +246,11 @@ address {
   color: var(--accent-color);
 }
 
+.contacts-icon-emai:hover,
+.contacts-icon-email:focus{
+  color: var(--accent-color);
+}
+
 .contact-number:hover,
 .contact-number:focus {
   color: var(--accent-color);
@@ -224,6 +264,9 @@ address {
 /* hero */
 
 .hero {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)),
     url("../images/hero/img.jpg");
@@ -363,14 +406,11 @@ address {
 
 .clients-box {
   display: flex;
-  padding-left: 32px;
-  padding-right: 32px;
-  margin-top: 50px;
 }
 
 .clients-list {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   margin-left: -30px;
   margin-top: -30px;
 }
@@ -399,6 +439,10 @@ address {
 .footer-container {
   display: flex;
   justify-content: flex-start;
+}
+
+.footer-social-list {
+  display: flex;
 }
 
 .footer-list {
@@ -443,13 +487,35 @@ address {
 }
 
 .footer-tagline {
-  color: var(--primary-text-color-theme-dark)
-}
+  color: var(--primary-text-color-theme-dark);
+ }
 
 .footer-social-list {
-  box-sizing: border-box;
-  width: 206px;
-  height: 80px;
+    display: flex;
+    justify-content: flex-start
+    margin-bottom: 20px;
+}
+
+.footer-social-list-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+
+.footer-social-list-link{
+  margin-top: 20px;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #ffffff;
+}
+
+.footer-social-list-link, .footer-social-list-link:focus {
+    background-color: var(--color-accent);
+    fill: #FFFFFF;
 }
 
 
