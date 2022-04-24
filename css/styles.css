@@ -494,8 +494,7 @@ address {
 
 .footer-tagline {
   color: var(--primary-text-color-theme-dark);
-   }
- 
+}
 
 .footer-social-list {
     display: flex;
