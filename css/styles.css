@@ -136,6 +136,7 @@ address {
   fill: var(--accent-color);
 }
 
+
 .features-list-picture {
   display: flex;
   justify-content: space-between;
@@ -149,6 +150,7 @@ address {
   height: 120px;
   background-color: #F5F4FA;
   fill: #212121;
+  border-radius: 4px;
 }
 
 /* header */
@@ -246,18 +248,18 @@ address {
   color: var(--accent-color);
 }
 
+.contact-mail:hover .contacts-icon-email,
+.contact-mail:focus .contacts-icon-email {
+  fill: var(--accent-color);
+}
+
 .contact-number:hover,
 .contact-number:focus {
   color: var(--accent-color);
 }
 
-.contacts-icon-email:hover,
-.contacts-icon-email:focus{
-  fill: var(--accent-color);
-}
-
-.contacts-icon-tel:hover,
-.contacts-icon-tel:focus {
+.contact-number:hover .contacts-icon-tel,
+.contact-number:focus .contacts-icon-tel {
   fill: var(--accent-color);
 }
 
@@ -434,6 +436,7 @@ address {
 
 /* footer */
 
+
 .footer {
   font-family: inherit;
   background-color: var(--secondary-primary-text-color-theme-dark);
@@ -442,17 +445,15 @@ address {
 }
 
 .footer-container {
-  display: flex;
+
 }
 
 .footer-social-list {
   display: flex;
-  justify-content: flex-start;
-}
 
+}
 .footer-list {
   margin-top: 20px;
-  
 }
 
 .logo-part-footer {
@@ -464,7 +465,6 @@ address {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
-  /* identical to box height, or 171% */
   letter-spacing: 0.03em;
   color: var(--primary-text-color-theme-dark);
   margin-bottom: 9px
@@ -490,25 +490,26 @@ address {
   /* or 171% */
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+} 
+
+.footer-info{
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-container{
+  margin-right: 70px;
 }
 
 .footer-tagline {
   color: var(--primary-text-color-theme-dark);
 }
 
-.footer-social-list {
-    display: flex;
-    justify-content: flex-start
-    margin-bottom: 20px;
-}
-
 .footer-social-list-item:not(:last-child) {
-    margin-right: 10px;
+  margin-right: 10px;
 }
-
 
 .footer-social-list-link{
-  margin-top: 20px;
   width: 44px;
   height: 44px;
   background: rgba(255, 255, 255, 0.1);
@@ -519,10 +520,10 @@ address {
   fill: #ffffff;
 }
 
-.footer-social-list-link, .footer-social-list-link:focus {
-    background-color: var(--color-accent);
-    fill: #FFFFFF;
+.footer-social-list-link:hover, .footer-social-list-link:focus{
+  background-color: var(--accent-color);
 }
+
 
 
 /* portfolio */
@@ -549,6 +550,8 @@ address {
 .page-nav-button:focus {
   background-color: var(--accent-color);
   cursor: pointer;
+  color: var(--primary-text-color-theme-dark);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .examples-name {
@@ -584,6 +587,12 @@ address {
   margin-right: auto;
 }
 
+.page-nav-button{
+  border-radius: 4px;
+  border: none;
+}
+
+
 .page-nav-list-item:not(:last-child) {
   margin-right: 8px;
 }
@@ -599,6 +608,11 @@ address {
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-top: 30px;
+}
+
+.examples-list-item:hover, 
+.examples-list-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .examples-list-caption {
