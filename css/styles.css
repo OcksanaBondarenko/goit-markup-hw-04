@@ -246,14 +246,19 @@ address {
   color: var(--accent-color);
 }
 
-.contacts-icon-emai:hover,
-.contacts-icon-email:focus{
-  color: var(--accent-color);
-}
-
 .contact-number:hover,
 .contact-number:focus {
   color: var(--accent-color);
+}
+
+.contacts-icon-email:hover,
+.contacts-icon-email:focus{
+  fill: var(--accent-color);
+}
+
+.contacts-icon-tel:hover,
+.contacts-icon-tel:focus {
+  fill: var(--accent-color);
 }
 
 .section {
@@ -438,15 +443,16 @@ address {
 
 .footer-container {
   display: flex;
-  justify-content: flex-start;
 }
 
 .footer-social-list {
   display: flex;
+  justify-content: flex-start;
 }
 
 .footer-list {
   margin-top: 20px;
+  
 }
 
 .logo-part-footer {
@@ -488,7 +494,8 @@ address {
 
 .footer-tagline {
   color: var(--primary-text-color-theme-dark);
- }
+   }
+ 
 
 .footer-social-list {
     display: flex;
